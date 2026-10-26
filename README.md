@@ -76,7 +76,7 @@ npm ci
 npm run dev
 ```
 
-Open http://127.0.0.1:5173. Vite proxies API calls to port 8000. For separate hosted services, set VITE_API_BASE_URL at build time and configure the backend CORS origins. No deployment is configured yet. Production build: `npm run build`.
+Open http://127.0.0.1:5173. Vite proxies API calls to port 8000. For separate hosted services, set VITE_API_BASE_URL at build time and configure the backend CORS origins. Vercel serves the frontend and Python API from the same origin. Production build: `npm run build`.
 
 - Decision view: explicit scenario submission, next-day forecast, publication times/age, coverage, interval table and CSV.
 - Accuracy: period MAE/RMSE/bias, selected delivery-day comparison, daily errors, actual half-hour detail and variation explanation.
@@ -85,7 +85,7 @@ Open http://127.0.0.1:5173. Vite proxies API calls to port 8000. For separate ho
 - `PRODUCT.md`, `DESIGN.md`, `.impeccable/design.json`: product and design context.
 - Font is locally bundled Manrope; icons are Lucide. No remote font dependency.
 
-Verification: `node verify.mjs` and `node verify-states.mjs` from frontend with both servers running (requires installed Microsoft Edge; uses Playwright headless). Checks cover desktop/mobile, January boundary, day selection, interval tables, CSV, error/retry, empty/partial data, overflow and runtime errors. Test fixtures are intercepted only in the isolated test browser and never used by the application.
+Verification: `node verify.mjs`, `node verify-states.mjs`, and `node verify-skeleton.mjs` from frontend with both servers running (requires installed Microsoft Edge; uses Playwright headless). Checks cover desktop/mobile, January boundary, day selection, interval tables, CSV, error/retry, empty/partial data, overflow and runtime errors. Test fixtures are intercepted only in the isolated test browser and never used by the application.
 
 The production build passes with a non-blocking bundle-size warning for the chart library (approximately 185 KB compressed for the combined app script). Chart splitting is a later optimization. Impeccable's automated detector was unavailable; a separate design review checked the screenshots/source and requested small-text contrast fixes, which were applied.
 
@@ -143,3 +143,7 @@ Run `npx vercel login`, then `npx vercel --prod` from the project root. The prod
 
 The hosted filesystem is not used for ingestion or persistent writes. To refresh this fixed historical dataset, run ingestion locally, verify it, then redeploy the bundled snapshot. Docker remains available for local reproduction of the full application.
 
+
+GitHub is connected to Vercel for automatic deployments. Pushes to main trigger production builds; check the deployment result before sharing the live URL.
+
+Submission preparation: see `docs/requirement-check.md` and `docs/demo-script.md`.
