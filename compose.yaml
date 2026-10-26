@@ -1,0 +1,20 @@
+name: gridbricks
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      GRIDBRICKS_DATA_DIR: /app/data/raw
+      GRIDBRICKS_DEFAULT_CUTOFF: ${GRIDBRICKS_DEFAULT_CUTOFF:-09:00}
+    restart: unless-stopped
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "127.0.0.1:${GRIDBRICKS_PORT:-8080}:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped

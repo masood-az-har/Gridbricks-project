@@ -1,0 +1,330 @@
+{
+  "forecastRows": 19856,
+  "actualRows": 1488,
+  "forecastNulls": 0,
+  "actualNulls": 0,
+  "duplicateForecastKeys": 0,
+  "duplicateActualKeys": 0,
+  "forecastMinuteValues": [
+    0
+  ],
+  "actualMinuteValues": [
+    0,
+    30
+  ],
+  "forecastPublicationCount": 272,
+  "actualDailyCounts": [
+    {
+      "Name": "2026-01-02",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-03",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-04",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-05",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-06",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-07",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-08",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-09",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-10",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-11",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-12",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-13",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-14",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-15",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-16",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-17",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-18",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-19",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-20",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-21",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-22",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-23",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-24",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-25",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-26",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-27",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-28",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-29",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-30",
+      "Count": 48
+    },
+    {
+      "Name": "2026-01-31",
+      "Count": 48
+    },
+    {
+      "Name": "2026-02-01",
+      "Count": 48
+    }
+  ],
+  "dailyCoverageAt0900": [
+    {
+      "decision": "2026-01-01",
+      "delivery": "2026-01-02",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-02",
+      "delivery": "2026-01-03",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-03",
+      "delivery": "2026-01-04",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-04",
+      "delivery": "2026-01-05",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-05",
+      "delivery": "2026-01-06",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-06",
+      "delivery": "2026-01-07",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-07",
+      "delivery": "2026-01-08",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-08",
+      "delivery": "2026-01-09",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-09",
+      "delivery": "2026-01-10",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-10",
+      "delivery": "2026-01-11",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-11",
+      "delivery": "2026-01-12",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-12",
+      "delivery": "2026-01-13",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-13",
+      "delivery": "2026-01-14",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-14",
+      "delivery": "2026-01-15",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-15",
+      "delivery": "2026-01-16",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-16",
+      "delivery": "2026-01-17",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-17",
+      "delivery": "2026-01-18",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-18",
+      "delivery": "2026-01-19",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-19",
+      "delivery": "2026-01-20",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-20",
+      "delivery": "2026-01-21",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-21",
+      "delivery": "2026-01-22",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-22",
+      "delivery": "2026-01-23",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-23",
+      "delivery": "2026-01-24",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-24",
+      "delivery": "2026-01-25",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-25",
+      "delivery": "2026-01-26",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-26",
+      "delivery": "2026-01-27",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-27",
+      "delivery": "2026-01-28",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-28",
+      "delivery": "2026-01-29",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-29",
+      "delivery": "2026-01-30",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-30",
+      "delivery": "2026-01-31",
+      "eligible": 24,
+      "publications": 1
+    },
+    {
+      "decision": "2026-01-31",
+      "delivery": "2026-02-01",
+      "eligible": 24,
+      "publications": 1
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "windfor.json",
+    "sourceUrl": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2025-12-29T00%3A00%3A00Z&publishDateTimeTo=2026-02-01T00%3A00%3A00Z",
+    "retrieved_at": "2026-10-26T11:44:12.585345+00:00",
+    "sha256": "8eb1a0caa3e0c2e2e652ebdbdb7a71a5a203b0e924c61eb005894fdde64012c7",
+    "bytes": 2237000,
+    "rows": 19856,
+    "unique_records": 19856,
+    "exact_duplicates": 0,
+    "first_target": "2025-12-28T21:00:00+00:00",
+    "last_target": "2026-02-02T21:00:00+00:00",
+    "first_publication": "2025-12-29T02:30:00+00:00",
+    "last_publication": "2026-01-31T22:30:00+00:00"
+  },
+  {
+    "file": "fuelhh.json",
+    "sourceUrl": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream?settlementDateFrom=2026-01-02&settlementDateTo=2026-02-01&fuelType=WIND",
+    "retrieved_at": "2026-10-26T11:44:13.796041+00:00",
+    "sha256": "65402b5dde43a2bd28bb71edd345371a06006247e0e134ccba20c8ecfec93ba3",
+    "bytes": 269923,
+    "rows": 1488,
+    "unique_records": 1488,
+    "exact_duplicates": 0,
+    "first_target": "2026-01-02T00:00:00+00:00",
+    "last_target": "2026-02-01T23:30:00+00:00",
+    "first_publication": "2026-01-02T00:30:00+00:00",
+    "last_publication": "2026-02-02T00:00:00+00:00"
+  }
+]

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+work/
+
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+.impeccable/review/
+.vercel/
+.vercel
+.env.*
+!.env.example
+*.log

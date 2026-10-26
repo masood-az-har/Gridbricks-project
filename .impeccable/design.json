@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T12:02:10.202Z",
+  "title": "Design System: GridBricks",
+  "extensions": {
+    "colorMeta": {
+      "teal": {
+        "role": "primary",
+        "displayName": "Forecast teal"
+      },
+      "actual": {
+        "role": "secondary",
+        "displayName": "Actual slate"
+      },
+      "publication": {
+        "role": "neutral",
+        "displayName": "Pale sage"
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm paper"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted green"
+      }
+    },
+    "typographyMeta": {
+      "metric": {
+        "displayName": "Metric",
+        "purpose": "Tabular numerical comparison; font-variant-numeric: tabular-nums."
+      }
+    },
+    "shadows": [
+      {
+        "name": "chart-tooltip",
+        "value": "0 6px 20px #20382e12",
+        "purpose": "Transient chart information only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-transition",
+        "value": "background 0.16s, border-color 0.16s",
+        "purpose": "Control feedback."
+      },
+      {
+        "name": "loading",
+        "value": "breathe 1.4s ease-in-out infinite alternate",
+        "purpose": "Pale loading surfaces; disabled by reduced-motion preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-header",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1050px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ],
+    "focus": {
+      "outline": "3px solid #138d7b",
+      "outlineOffset": "4px"
+    },
+    "sources": [
+      "frontend/src/style.css",
+      "frontend/src/App.tsx"
+    ],
+    "note": "Tonal ramps omitted: no source tonal scale exists; this finish pass records implementation without inventing additional palette tokens."
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Submit the edited scenario.",
+      "html": "<button class=\"ds-control ds-primary\">Evaluate period</button>",
+      "css": ".ds-primary{font-family:\"Manrope Variable\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #cbd6ce;background:#fff;color:var(--ink,#20382e);border-radius:6px;padding:10px 15px;font-size:14px;font-weight:650;cursor:pointer;transition:background .16s,border-color .16s;background:#174c3d;border-color:#174c3d;color:#fff;height:42px;font-size:12px;padding-inline:20px}.ds-primary:hover{background:#0b6450;border-color:#0b6450}.ds-primary:disabled{opacity:.4;cursor:not-allowed}.ds-control:focus-visible{outline:3px solid #138d7b;outline-offset:4px}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Retry a failed request.",
+      "html": "<button class=\"ds-control ds-secondary\">Try again</button>",
+      "css": ".ds-secondary{font-family:\"Manrope Variable\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #cbd6ce;background:#fff;color:var(--ink,#20382e);border-radius:6px;padding:10px 15px;font-size:14px;font-weight:650;cursor:pointer;transition:background .16s,border-color .16s;}.ds-secondary:hover{background:#edf3ee;border-color:#9fb6a9}.ds-secondary:active{background:#dce9df}.ds-secondary:disabled{opacity:.4;cursor:not-allowed}.ds-control:focus-visible{outline:3px solid #138d7b;outline-offset:4px}"
+    },
+    {
+      "name": "Quiet button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Download displayed data.",
+      "html": "<button class=\"ds-control ds-quiet\">Download CSV</button>",
+      "css": ".ds-quiet{font-family:\"Manrope Variable\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid #cbd6ce;background:#fff;color:var(--ink,#20382e);border-radius:6px;padding:10px 15px;font-size:14px;font-weight:650;cursor:pointer;transition:background .16s,border-color .16s;border:0;background:transparent;font-size:11px;padding:5px 0;color:#365d49}.ds-quiet:hover{color:var(--teal,#087e72)}.ds-control:focus-visible{outline:3px solid #138d7b;outline-offset:4px}"
+    },
+    {
+      "name": "Date field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Native labeled date control.",
+      "html": "<label class=\"ds-field\">Delivery day<input class=\"ds-control\" type=\"date\" value=\"2026-01-11\"></label>",
+      "css": ".ds-field{font-family:\"Manrope Variable\",sans-serif;display:flex;flex-direction:column;gap:9px;font-size:11px;font-weight:650;color:#52685b}.ds-field input{font-family:\"Manrope Variable\",sans-serif;height:42px;border:1px solid #cbd6ce;border-radius:5px;background:white;padding:0 12px;color:#284537;font-weight:600;font-size:13px;color-scheme:light;caret-color:var(--teal,#087e72)}.ds-control:focus-visible{outline:3px solid #138d7b;outline-offset:4px}"
+    },
+    {
+      "name": "View navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Two views with selected underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Dashboard views\"><button class=\"ds-control ds-selected\" aria-current=\"page\">Decision view</button><button class=\"ds-control\">Accuracy</button></nav>",
+      "css": ".ds-nav{display:flex;gap:30px;background:#fff}.ds-nav button{font-family:\"Manrope Variable\",sans-serif;height:59px;border:0;border-radius:0;padding:0;position:relative;font-size:13px;font-weight:650;background:transparent;color:#68766e;min-width:104px;cursor:pointer}.ds-nav .ds-selected{color:var(--teal,#087e72);font-weight:750}.ds-selected:after{content:\"\";position:absolute;height:3px;background:var(--teal,#087e72);left:0;right:0;bottom:0}.ds-control:focus-visible{outline:3px solid #138d7b;outline-offset:4px}"
+    },
+    {
+      "name": "Snapshot badge",
+      "kind": "chip",
+      "refersTo": "snapshot-badge",
+      "description": "Passive historical context.",
+      "html": "<span class=\"ds-badge\">Historical snapshot</span>",
+      "css": ".ds-badge{font-family:\"Manrope Variable\",sans-serif;display:inline-block;background:#eff3ee;padding:6px 9px;border-radius:4px;color:#506659;font-size:11px}"
+    },
+    {
+      "name": "Chart panel",
+      "kind": "card",
+      "refersTo": "chart-panel",
+      "description": "Flat bordered analytical container.",
+      "html": "<section class=\"ds-panel\"><h2>Delivery-day forecast</h2><p>Hourly forecast points</p></section>",
+      "css": ".ds-panel{font-family:\"Manrope Variable\",sans-serif;background:white;border:1px solid var(--line,#dce3dd);border-radius:8px;overflow:hidden;padding:24px 25px;color:var(--ink,#20382e)}.ds-panel h2{margin:0;font-size:16px;letter-spacing:-.25px;font-weight:750}.ds-panel p{font-size:11px;color:var(--muted,#617269);margin:7px 0;line-height:1.7}"
+    },
+    {
+      "name": "Publication inspector",
+      "kind": "card",
+      "refersTo": "publication",
+      "description": "Sage provenance surface.",
+      "html": "<aside class=\"ds-publication\"><h2>The information window</h2><p>What was available before your decision.</p></aside>",
+      "css": ".ds-publication{font-family:\"Manrope Variable\",sans-serif;background:#eaf0e8;border-radius:8px;padding:24px 23px;color:var(--ink,#20382e)}.ds-publication h2{margin:0;font-size:14px;letter-spacing:-.25px;font-weight:750}.ds-publication p{font-size:11px;line-height:1.8;color:#627764;margin:10px 0 20px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The energy analyst's workspace",
+    "overview": "A quiet, light analytical interface with warm paper surroundings, white chart surfaces and a pale sage publication inspector. The agreed teal and sage direction keeps the working data, controls and provenance legible without ornamental decoration.\n\nCompact annotations and tabular numbers support careful comparison. Hairlines and tonal surfaces establish hierarchy; restrained controls keep attention on the selected scenario and its evidence.",
+    "keyCharacteristics": [
+      "Light teal and sage analytical palette.",
+      "Compact labels with prominent tabular metrics.",
+      "Flat panels, hairline dividers and restrained controls.",
+      "Visible provenance, coverage and uncertainty."
+    ],
+    "rules": [
+      {
+        "name": "The Evidence Rule",
+        "body": "Supplement series color with line pattern and labels; retain missing observations as visible gaps.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do preserve the light teal and sage analytical direction.",
+      "Do keep labels, focus outlines and numerical units visible.",
+      "Do pair chart colors with labels and line patterns.",
+      "Do expose provenance, coverage and uncertainty alongside results.",
+      "Do keep wide tables inside a scrollable region."
+    ],
+    "donts": [
+      "Don't add decorative shadows, gradients or ornamental card mosaics.",
+      "Don't invent live-status signals or fabricate observations.",
+      "Don't bridge missing values or hide approximation caveats.",
+      "Don't replace native date and time fields with decorative controls."
+    ]
+  }
+}
